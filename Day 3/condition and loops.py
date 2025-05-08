@@ -99,21 +99,6 @@
 #     print(f"your love score is {love_score}")
 
 
-#Treasure island
-print("welcome to treasure island. ")
-print("Your mission is to find treasure. ")
-choice1=input("you're at a crossroad, where do you want to go? Type 'left or 'write  ")
 
-if choice1 == 'left':
-   choice2=input("you've come to a lake. there is an island in the middle of the lake . type 'wait' to wait for a boad. type 'swin' to swim scross").lower()
-    if choice2=='wait':
-       choice3=input("you are arrive at the iceland unharmed. there is a house with 3 doors. One red, One yellow, and one blue").lower()
-       if choice3=='red':
-       elif choice3=='yellow':
-       elif choice3=='blue':
 
-    else:
-        print("you got attacked by angry animal")
-else:
-    print("you fell into a hole. Game over. ")
 
