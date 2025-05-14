@@ -1,6 +1,7 @@
 #ceaser Cipher
 import math
 
+from Day7.Hangman import position
 from art import logo
 print(logo)
 def ceaser(start_text,shift_amount, cipher_direction):
@@ -73,6 +74,7 @@ while should_continue:
 #     decrypt(cipher_text=text, shift_amount=shift)
 # else:
 #     print("enter the right keyword")
+
 
 
 
