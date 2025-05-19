@@ -1,4 +1,6 @@
 ############higher######################lower##############
+from IPython.terminal.shortcuts.auto_suggest import accept
+
 from art import logo
 from art import vs
 from game_data import data
@@ -19,17 +21,19 @@ def check_answer(guess, a_followers, b_followers):
     else:
         return guess == "b"
 
-
 #Display art
 print(logo)
 score = 0
 game_should_continue = True
+account_b = random.choice(data)
 # make the game repeatable
 while game_should_continue:
     #Generante a random account from the game data
-    account_a = random.choice(data)
+
+    # making accounts at position B become the next account at position A
+    account_a = account_b
     account_b = random.choice(data)
-    if account_a == account_b:
+    while account_a == account_b:
         account_b = random.choice(data)
     print(f"compare A: {format_data(account_a)}")
     print(vs)
@@ -46,7 +50,7 @@ while game_should_continue:
     a_follower_count = account_a["follower_count"]
     b_follower_count = account_b["follower_count"]
     is_correct = check_answer(guess, a_follower_count,b_follower_count)
-
+    print(logo)
     #Give user feedback on their guess
     if is_correct:
         # score keeping
@@ -56,10 +60,3 @@ while game_should_continue:
         game_should_continue = False
         print(f"sorry that's wrong: Your final score is {score}")
 
-
-
-
-
-
-
-#making accounts at position B become the next account at position A
