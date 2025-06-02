@@ -1,4 +1,3 @@
-# test_numpy.py
 import numpy as np
 
 arr = np.array([10, 20, 30])
