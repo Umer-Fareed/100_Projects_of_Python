@@ -33,7 +33,7 @@ from itertools import count
 # monday_temp = int(monday.temp)
 # monday_temp_f = monday_temp * 9/5 + 32
 # print(monday_temp_f)
-# 
+#
 # create a dataframe
 # data_dict = {
 #     "students" : ["any","james","angela"],
@@ -79,11 +79,12 @@ while len(guessed_states) < 50:
     answer_state = screen.textinput(title= f"{len(guessed_states)}/Guess the state" ,
                                     prompt=" What's another state's name?").title()
     if answer_state == "Exit":
-        missing_states = []
-        for state in all_states:
-            if state not in guessed_states:
-
-                missing_states.append(state)
+        missing_states= [state for state in all_states if state not in guessed_states ]
+        # missing_states = []
+        # for state in all_states:
+        #     if state not in guessed_states:
+        #
+        #         missing_states.append(state)
         new_data = pandas.DataFrame(missing_states)
         print(new_data)
         new_data.to_csv("States_to_learn.csv")
