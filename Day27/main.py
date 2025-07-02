@@ -1,8 +1,5 @@
 from tkinter import *
 
-from pandas.io.sas.sas_constants import column_label_length_length
-
-
 def button_clicked():
     print("i got clicked ")
     new_text= input.get()
