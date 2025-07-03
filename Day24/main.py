@@ -1,4 +1,3 @@
-from numpy.core.defchararray import strip
 
 PLACEHOLDER= "[name]"
 

@@ -36,12 +36,13 @@
 # print(temp_in_f)
 
 #iteration in dataframes
-import pandas
-student_data= {
-    "students": ["fareed", "umar","adeel","haroon"],
-    "score": [32,43,5,64]
-}
-
-student_data_frame= pandas.DataFrame(student_data)
-for (index,row) in student_data_frame.iterrows():
-    print(row.score)
+# import pandas
+# student_data= {
+#     "students": ["fareed", "umar","adeel","haroon"],
+#     "score": [32,43,5,64]
+# }
+#
+# student_data_frame= pandas.DataFrame(student_data)
+# print(student_data_frame)
+# for (index,row) in student_data_frame.iterrows():
+#     print(row.score)

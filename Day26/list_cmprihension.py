@@ -19,7 +19,7 @@
 # new_range= [n*2 for n in range(1,5)]
 # print(new_range)
 #
-# #conditional in list comprehension
+# #condition in list comprehension
 # #new_list = [new_item for item in list if text]
 #
 # names= ["umar" , "adeel", "haroon", "maan", "sayam"]
