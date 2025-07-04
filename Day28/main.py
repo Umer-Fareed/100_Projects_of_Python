@@ -11,7 +11,7 @@ SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 reps= 0
 timer= None
-# ---------------------------- TIMER RESET ------------------------------- #
+# ---------------------------- TIMER RESET ---------------------------------- #
 def reset_timer():
     window.after_cancel(timer)
     canvas.itemconfig(timer_text, text= "00:00")
@@ -78,7 +78,7 @@ start_button.grid(column= 0, row= 2)
 reset_button= Button(text= "Reset", highlightthickness=0, command= reset_timer)
 reset_button.grid(column= 2, row= 2)
 
-check_marks= Label(text= "", fg= GREEN, bg= YELLOW)
+check_marks= Label( text= "✓", fg= GREEN, bg= YELLOW)
 check_marks.grid(column= 1, row= 3)
 
 
