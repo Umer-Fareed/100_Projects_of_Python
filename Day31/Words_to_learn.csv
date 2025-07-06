@@ -1,84 +1,63 @@
-,French,English
-0,partie,part
-1,chercher,search
-2,seulement,only
-3,police,police
-4,pensais,thought
-5,aide,help
-6,genre,kind
-7,mois,month
-8,frère,brother
-9,laisser,let
-10,car,because
-11,mettre,to put
-12,aucun,no
-13,laisse,leash
-14,eux,them
-15,ville,city
-16,chaque,each
-17,parlé,speak
-18,devrait,should
-19,bébé,baby
-20,longtemps,long time
-21,heures,hours
-22,aucune,any
-23,place,square
-24,parle,speak
-25,compris,understood
-26,savais,knew
-27,pourrais,could
-28,affaire,case
-29,donner,give
-30,type,type
-31,leurs,their
-32,donné,given
-33,train,train
-34,corps,body
-35,endroit,place
-36,yeux,eyes
-37,trouve,find
-38,premier,first
-39,perdu,lost
-40,main,hand
-41,première,first
-42,pouvoir,power
-43,vieux,old
-44,sois,be
-45,tiens,here
-46,matin,morning
-47,tellement,so much
-48,enfant,child
-49,point,point
-50,venu,came
-51,suite,after
-52,pardon,sorry
-53,venez,come
-54,devant,in front of
-55,vers,towards
-56,minutes,minutes
-57,demandé,request
-58,chambre,bedroom
-59,mis,placed
-60,belle,beautiful
-61,droit,law
-62,aimerais,would like to
-63,aujourd'hui,today
-64,mari,husband
-65,cause,cause
-66,enfin,finally
-67,espère,hope
-68,attendez,Wait
-69,nouvelle,new
-70,boulot,job
-71,arrêter,Stop
-72,dirait,would say
-73,compte,account
-74,donne,given
-75,loin,far
-76,croire,believe
-77,chérie,sweetheart
-78,gros,large
-79,plutôt,rather
-80,aura,will have
-81,filles,girls
-82,jouer,to play
+Unnamed: 0.1,Unnamed: 0,French,English
+0,1,chercher,search
+1,2,seulement,only
+3,4,pensais,thought
+4,5,aide,help
+5,6,genre,kind
+6,7,mois,month
+7,8,frère,brother
+8,9,laisser,let
+9,10,car,because
+10,11,mettre,to put
+11,12,aucun,no
+12,13,laisse,leash
+13,14,eux,them
+15,16,chaque,each
+17,19,bébé,baby
+18,20,longtemps,long time
+19,21,heures,hours
+20,22,aucune,any
+21,23,place,square
+23,25,compris,understood
+24,26,savais,knew
+25,27,pourrais,could
+26,28,affaire,case
+28,30,type,type
+30,32,donné,given
+31,34,corps,body
+32,35,endroit,place
+34,37,trouve,find
+35,38,premier,first
+36,39,perdu,lost
+37,40,main,hand
+38,41,première,first
+39,43,vieux,old
+40,44,sois,be
+41,45,tiens,here
+44,49,point,point
+46,51,suite,after
+47,52,pardon,sorry
+48,53,venez,come
+49,54,devant,in front of
+51,56,minutes,minutes
+53,59,mis,placed
+54,60,belle,beautiful
+55,61,droit,law
+56,62,aimerais,would like to
+57,63,aujourd'hui,today
+58,64,mari,husband
+59,65,cause,cause
+60,66,enfin,finally
+61,67,espère,hope
+62,68,attendez,Wait
+63,69,nouvelle,new
+64,70,boulot,job
+65,71,arrêter,Stop
+66,72,dirait,would say
+67,73,compte,account
+68,74,donne,given
+69,75,loin,far
+70,76,croire,believe
+71,77,chérie,sweetheart
+75,81,filles,girls
+76,82,jouer,to play
