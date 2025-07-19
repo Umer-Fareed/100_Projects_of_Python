@@ -1,6 +1,6 @@
 # import requests
 # import smtplib
-# from twilio.rest import Client
+
 #
 # api_url = "https://api.openweathermap.org/data/2.5/weather"
 # api_key ="1c63106d351d9e43d14964e570ee8df0"
@@ -13,9 +13,7 @@
 #     "lon": -0.127758,
 #     "appid": api_key,
 # }
-# account_sid="AC7c274a2f138c44213d603261683b03c7"
-# auth_token="783c8a54c0d7ae0898a195bb203c36e5"
-#
+
 # response = requests.get(api_url, params=weather_params)
 # weather_data= response.json()
 # print(response.json())
