@@ -23,17 +23,17 @@
 # print(new_dict)
 
 #3 exercise
-# weather_c= {
-#     "monday":12,
-#     "tuesday":14,
-#     "wednesday":15,
-#     "thursday":14,
-#     "friday":21,
-#     "saturday":22,
-#     "sunday":24
-# }
-# temp_in_f= {day:temp*9/5+32 for (day,temp) in weather_c.items()}
-# print(temp_in_f)
+weather_c= {
+    "monday":12,
+    "tuesday":14,
+    "wednesday":15,
+    "thursday":14,
+    "friday":21,
+    "saturday":22,
+    "sunday":24
+}
+temp_in_f= {day:temp*9/5+32 for (day,temp) in weather_c.items()}
+print(temp_in_f)
 
 #iteration in dataframes
 # import pandas
