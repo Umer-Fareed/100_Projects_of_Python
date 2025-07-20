@@ -24,7 +24,7 @@ stock_parameters={
     "apikey":STOCK_API_KEY
                 }
 response= requests.get(url= STOCK_ENDPOINT,params=stock_parameters)
-data= response.json()
+data= response.json()["Time Series (Daily)"]
 print(data)
 data_list= [value for  (key,value) in data.items()]
 yesterday_data = data_list[0]
@@ -38,6 +38,8 @@ print(day_before_closing_price)
 
 #Find the difference between 1 and 2
 price_diff = float(yesterday_closing_price) - float(day_before_closing_price)
+
+
 up_down= None
 if price_diff > 0 :
     up_down= "🔺"
@@ -47,6 +49,7 @@ else:
 #Work out the percentage difference in price between closing price yesterday and closing price the day before yesterday.
 percentage_diff = round((price_diff / float(yesterday_closing_price)) * 100)
 print(f"Percentage difference: {percentage_diff}%")
+
 
  ## STEP 2: https://newsapi.org/
     # Instead of printing ("Get News"), actually get the first 3 news pieces for the COMPANY_NAME.
@@ -66,17 +69,17 @@ if abs(percentage_diff) > 1:
     ## STEP 3: Use Twilio to send a seperate message with each article's title and description to your phone number.
 
     # Create a new list of the first 3 articles headline and description using list comprehension.
-    formatted_articles= [f"{STOCK_NAME}: {up_down}{percentage_diff}%\nHeadline: {article['title']}. \nBrief: {article['description']}" for article in three_articles]
+    formatted_articles= [f"{STOCK_NAME}: {up_down}{percentage_diff}% \n Headline: {article['title']}. \n Brief: {article['description']}" for article in three_articles]
     print(formatted_articles)
     # Send each article as a separate message via Twilio
     for article in formatted_articles:
         with smtplib.SMTP("smtp.gmail.com", 587) as connection:
             connection.starttls()
             connection.login(my_email, password)
+            msg = f"Subject: Stock Alert\nContent-Type: text/plain; charset=utf-8\n\n{article}"
             connection.sendmail(
                 from_addr=my_email,
-                to_addrs=send_mail,
-                msg=f"subject: Heppy Birthday \n\n"
-                     f"{article} ")
-
+                to_addrs="experimental.my2@yahoo.com",
+                msg=msg.encode("utf-8")
+            )
 
