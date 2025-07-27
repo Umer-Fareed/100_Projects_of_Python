@@ -10,8 +10,11 @@ AGE= 22
 #Nutritionix app-id and api-key
 
 
+APP_ID= "6f34b0e2 for example"
+API_KEY= "34c216998c9ffa201a90fa8d993c961e for example "
+sheet_endpoint= "https://api.sheety.co/e0396226528caedbf2700dbcf56591c8/workoutTracking/workouts for example "
 
-exercise_endpoint = "https://trackapi.nutritionix.com/v2/natural/exercise"
+exercise_endpoint = "https://trackapi.nutritionix.com/v2/natural/exercise for example "
 
 exercise_text = input("Tell me which exercises you did: ")
 
