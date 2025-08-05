@@ -14,8 +14,8 @@ user_params= {
     "agreeTermsOfService": "yes",
     "notMinor": "yes"
 }
-# response= requests.post(url=pixela_endpoint, json= user_params)
-# print(response.text)
+response= requests.post(url=pixela_endpoint, json= user_params)
+print(response.text)
 
 graph_endpoint= f"{pixela_endpoint}/{USER_NAME}/graphs"
 
@@ -30,8 +30,8 @@ graph_config= {
 headers= {
     "X-USER-TOKEN": TOKEN
 }
-# response= requests.post(url=graph_endpoint,json=graph_config, headers= headers)
-# print(response.text)
+response= requests.post(url=graph_endpoint,json=graph_config, headers= headers)
+print(response.text)
 
 
 pixel_creation_endpoint= f"{pixela_endpoint}/{USER_NAME}/graphs/{GRAPH_ID}"
