@@ -9,11 +9,10 @@ import time
 
 chrome_driver_path= r"C:\development\chromedriver-win64\chromedriver.exe"
 service= Service(chrome_driver_path)
-
 options= Options()
 options.add_experimental_option("detach", True)
-
 driver= webdriver.Chrome(service= service, options=options)
+
 driver.get("https://www.linkedin.com/jobs/collections/recommended/?currentJobId=4292742986")
 
 EMAIL_ID = "YOUR MAIL"
